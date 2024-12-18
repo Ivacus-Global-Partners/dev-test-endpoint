@@ -2,16 +2,16 @@ import { Context, Hono } from 'hono'
 import { payloadSchema } from './zschemas'
 import { Payload } from './types'
 import { zValidator } from '@hono/zod-validator'
-import { getData } from './lib/data'
+// import { getData } from './lib/data'
 import { createPurchase } from './lib/process'
 
 const app = new Hono()
 
-// app.get('/', (c) => {
-//   return c.text('Hello Hono!')
-// })
+app.get('/', (c) => {
+  return c.text('Hello!')
+})
 
-const manualPs = async (c: Context<{}, '/manual', { out: { json: Payload } }>) => {
+const manualPs = async (c: Context<object, '/manual', { out: { json: Payload } }>) => {
   const data = c.req.valid('json')
   const purchasing = await createPurchase(data)
   return c.json({ ...purchasing })
