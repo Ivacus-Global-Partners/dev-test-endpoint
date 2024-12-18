@@ -11,7 +11,7 @@ interface Payload<V> {
   token: string
 }
 
-export default async function graphqlRequest<T, V>({ query: doc, variables, token = '' }: Payload<V>) {
+export default async function graphqlRequest<T, V>({ query: doc, variables /*token = ''*/ }: Payload<V>) {
   try {
     const query = doc.loc && doc.loc.source.body
     const res = await axios(DB_HOST, {
@@ -26,14 +26,14 @@ export default async function graphqlRequest<T, V>({ query: doc, variables, toke
       data: {
         /** FIXME
          * Put your query here to find a valid user and get their data.
-         * We are comparing the password through JWT @auth rules not in any filter of the query
+         * We are comparing the password through JWT \@auth rules not in any filter of the query
          */
         query,
         variables,
       },
     })
 
-    const errors = (res?.data?.errors as any[]) || []
+    const errors = (res?.data?.errors as unknown[]) || []
 
     if (errors?.length) {
       console.log('ERROR IN:', query)

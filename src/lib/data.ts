@@ -80,7 +80,7 @@ export const getPassProductData = async (productGUID: string, petpassPartnerGUID
 
 export function calculateValuesByPromo({
   price,
-  appProductTaxValue,
+  // appProductTaxValue,
   petpassProduct,
   promo,
 }: {
