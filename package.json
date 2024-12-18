@@ -2,7 +2,9 @@
   "name": "manual-purchase",
   "scripts": {
     "dev": "bun run --hot src/index.ts",
-    "z":"bunx ts-to-zod src/types.ts src/zschemas.ts "
+    "build": "bun build src/index.ts --outdir ./built",
+    "z": "bunx ts-to-zod src/types.ts src/zschemas.ts ",
+    "l": "bunx eslint"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.4.1",
@@ -17,9 +19,14 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.17.0",
     "@types/bun": "latest",
     "@types/geoip-lite": "^1.4.4",
-    "ts-to-zod": "^3.15.0"
+    "eslint": "^9.17.0",
+    "eslint-plugin-tsdoc": "^0.4.0",
+    "globals": "^15.13.0",
+    "ts-to-zod": "^3.15.0",
+    "typescript-eslint": "^8.18.1"
   },
   "resolutions": {
     "bun-types": "1.0.24",
