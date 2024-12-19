@@ -8,7 +8,7 @@ import { createPurchase } from './lib/process'
 const app = new Hono()
 
 app.get('/', (c) => {
-  return c.text('Hello!')
+  return c.text('Hello!!')
 })
 
 const manualPs = async (c: Context<object, '/manual', { out: { json: Payload } }>) => {
