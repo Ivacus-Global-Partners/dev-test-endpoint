@@ -21,6 +21,11 @@ const app = new Hono()
 //   }
 // })
 
-app.post('/register', async (c) => console.log(c.json(c.req.parseBody)))
+app.post('/register', async (c) => {
+  const payload = await c.req.json()
+  console.log({ ...payload })
+
+  return c.json({ ...payload })
+})
 
 export default app
