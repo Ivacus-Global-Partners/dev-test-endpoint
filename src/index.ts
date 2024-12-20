@@ -1,9 +1,7 @@
-import { Context, Hono } from 'hono'
-import { payloadSchema } from './zschemas'
-import { Payload } from './types'
-import { zValidator } from '@hono/zod-validator'
-// import { getData } from './lib/data'
-import { createPurchase } from './lib/process'
+import { Hono } from 'hono'
+import register from './rutas/x/shop/register'
+import purchase from './rutas/x/shop/register'
+import redsys from './rutas/x/payment/redsys'
 
 const app = new Hono()
 
@@ -11,18 +9,6 @@ app.get('/', (c) => {
   return c.text('Hello!!')
 })
 
-const manualPs = async (c: Context<object, '/manual', { out: { json: Payload } }>) => {
-  const data = c.req.valid('json')
-  const purchasing = await createPurchase(data)
-  return c.json({ ...purchasing })
-}
-
-const valida = zValidator('json', payloadSchema, (result, c) => {
-  if (!result.success) {
-    return c.text('Json invalido!', 400)
-  }
-})
-
-app.post('/manual', valida, manualPs)
-
-export default app
+app.route('/x/shop', register)
+app.route('/x/shop', purchase)
+app.route('/x/payment', redsys)
