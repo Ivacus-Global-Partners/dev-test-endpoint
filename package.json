@@ -2,7 +2,7 @@
   "name": "manual-purchase",
   "scripts": {
     "dev": "bun run --hot src/index.ts",
-    "build": "bun build src/index.ts --outdir ./built",
+    "build": "bun build src/index.ts --outdir ./built --target bun",
     "z": "bunx ts-to-zod src/types.ts src/zschemas.ts ",
     "l": "bunx eslint"
   },
