@@ -12,3 +12,5 @@ app.get('/', (c) => {
 app.route('/x/shop', register)
 app.route('/x/shop', purchase)
 app.route('/x/payment', redsys)
+
+export default app
