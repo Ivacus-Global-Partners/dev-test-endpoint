@@ -1,33 +1,29 @@
-import { ExternalAPIObject, Payload } from '../types'
-import { createGUID } from './cripto'
+import { Payload } from './types'
+import { createGUID } from '@lib/cripto'
 import {
   calculateValuesByPromo,
   CreatePurchaseFromPartnerDocument,
   CreatePurchaseFromPartnerMutation,
   CreatePurchaseFromPartnerMutationVariables,
-  getData,
   getPassProductData,
-} from './data'
-import { E360App_shop_channel, E360App_shop_purchaseStatus, PetGender } from './graph-types'
-import { parsePetRole } from './petpass'
-import graphqlRequest from './query/graphqlRequest'
-
-const EXTERNAL_API_OBJECT = Bun.env.EXTERNAL_API_OBJECT ?? ''
-
-const petpassApp = JSON.parse(Buffer.from(EXTERNAL_API_OBJECT, 'base64').toString('utf-8')) as ExternalAPIObject
+  petpassApp,
+} from '@lib/data'
+import { E360App_shop_channel, E360App_shop_purchaseStatus, PetGender } from '@lib/graph-types'
+import { parsePetRole } from '@lib/petpass'
+import graphqlRequest from '@lib/query/graphqlRequest'
 
 export const createPurchase = async (payload: Payload) => {
   const data = await getPassProductData(payload.productGUID, payload.partnerGUID, payload.promoCode)
   const promo = data?.getE360App_shop_promotionCode
   const petpassPartner = data?.getPETPASS_partner
-  const partner = petpassPartner ? petpassPartner.partner : null
-  const partnerName = partner ? partner.name : null
+  // const partner = petpassPartner ? petpassPartner.partner : null
+  // const partnerName = partner ? partner.name : null
 
   const petpassProduct = data?.getPETPASS_product
-  const petpassProductType = petpassProduct?.type
+  // const petpassProductType = petpassProduct?.type
   const appProduct = petpassProduct?.product
   const appProductPrice = appProduct?.price ?? 0
-  const appProductName = appProduct?.name
+  // const appProductName = appProduct?.name
   const appShopGUID = appProduct?.shop.guid
   const appProductTaxValue = appProduct?.taxValue ?? 0
   const appProductTaxValueType = appProduct?.taxValueType // Percentage or fixed
@@ -40,7 +36,7 @@ export const createPurchase = async (payload: Payload) => {
   // Si el impuesto está incluido en el precio, el costo total es igual al costo del producto
   // Si el impuesto no está incluido en el precio, el costo total es igual al costo del producto más el valor del impuesto
   const total = cost
-  const taxPercentage = appProductTaxValue
+  // const taxPercentage = appProductTaxValue
 
   // Tax is included in the price
 

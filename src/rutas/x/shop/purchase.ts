@@ -1,18 +1,10 @@
-import { Context, Hono } from 'hono'
+import { Hono } from 'hono'
 import { payloadSchema } from './zschemas'
-import { Payload } from './types'
 import { zValidator } from '@hono/zod-validator'
 // import { getData } from './lib/data'
-import { createPurchase } from '@lib/process'
+import { createPurchase } from './process'
 
 const app = new Hono()
-
-const manualPurchase = async (c: Context<object, '/purchase', { out: { json: Payload } }>) => {
-  console.log(c)
-  const data = c.req.valid('json')
-  const purchasing = await createPurchase(data)
-  return c.json({ ...purchasing })
-}
 
 const valida = zValidator('json', payloadSchema, (result, c) => {
   if (!result.success) {
@@ -20,6 +12,10 @@ const valida = zValidator('json', payloadSchema, (result, c) => {
   }
 })
 
-app.post('/purchase', valida, manualPurchase)
+app.post('/purchase', valida, async (c) => {
+  const data = c.req.valid('json')
+  const purchasing = await createPurchase(data)
+  return c.json({ ...purchasing })
+})
 
 export default app

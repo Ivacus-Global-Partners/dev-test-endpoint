@@ -1,6 +1,6 @@
 import gql from 'graphql-tag'
-import { ExternalAPIObject, Payload } from '../types'
-import { parsePetRole, PetGender } from './petpass'
+import { ExternalAPIObject } from './types'
+// import { parsePetRole, PetGender } from './petpass'
 import graphqlRequest from './query/graphqlRequest'
 
 import {
@@ -28,8 +28,9 @@ import {
 
 const EXTERNAL_API_OBJECT = Bun.env.EXTERNAL_API_OBJECT ?? ''
 
-const petpassApp = JSON.parse(Buffer.from(EXTERNAL_API_OBJECT, 'base64').toString('utf-8')) as ExternalAPIObject
+export const petpassApp = JSON.parse(Buffer.from(EXTERNAL_API_OBJECT, 'base64').toString('utf-8')) as ExternalAPIObject
 
+/*
 export const getData = (payload: Payload) => {
   const { purchaseGUID, purchaseDate } = payload
   //basicData
@@ -60,6 +61,7 @@ export const getData = (payload: Payload) => {
 
   return { ...petpassApp, productGUID, purchaseGUID, purchaseDate, ...customerData, customerDataRaw }
 }
+*/
 
 export const getPassProductData = async (productGUID: string, petpassPartnerGUID = 'x', promoCode = 'x') => {
   const { data } = await graphqlRequest<GetPetpassProductQuery, GetPetpassProductQueryVariables>({
