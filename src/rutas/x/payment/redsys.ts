@@ -14,7 +14,7 @@ app.post('/geturl', async (c) => {
   const payload = await c.req.json()
   console.log(payload)
 
-  return c.json({ code: 1, error: null, url: 'https://eso' })
+  return c.json({ code: 1, error: null, url: 'http://dev.api.petpass.pro/x/payment-ok' })
 })
 
 app.post('/payment-ok', async (c) => {
