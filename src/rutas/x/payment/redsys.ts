@@ -1,12 +1,27 @@
 import { Hono } from 'hono'
+import { payloadSchema } from './zschema'
+import { zValidator } from '@hono/zod-validator'
 
 const app = new Hono()
 
-app.post('/', async (c) => {
+const valida = zValidator('json', payloadSchema, (result, c) => {
+  if (!result.success) {
+    return c.json({ code: 0, error: 'Ok', url: null })
+  }
+})
+
+app.post('/geturl', async (c) => {
   const payload = await c.req.json()
   console.log(payload)
 
-  return c.json({ success: true, payload })
+  return c.json({ code: 1, error: null, url: 'https://eso' })
+})
+
+app.post('/payment-ok', async (c) => {
+  const payload = await c.req.json()
+  console.log(payload)
+
+  return c.json({ code: 1, error: 0, url: 'https://eso', payment: true })
 })
 
 export default app

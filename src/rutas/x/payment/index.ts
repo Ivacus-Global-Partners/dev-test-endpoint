@@ -3,6 +3,6 @@ import redsys from './redsys'
 
 const app = new Hono()
 
-app.route('/geturl', redsys)
+app.route('/', redsys)
 
 export default app
