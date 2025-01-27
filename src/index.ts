@@ -3,7 +3,7 @@ import { logger } from 'hono/logger'
 
 import bot from './rutas/x/bot'
 import purchase from './rutas/x/shop/purchase'
-import redsys from './rutas/x/payment/redsys'
+import payment from './rutas/x/payment'
 
 const app = new Hono()
 app.use(logger())
@@ -14,6 +14,6 @@ app.get('/', (c) => {
 
 app.route('/x/bot', bot)
 app.route('/x/shop', purchase)
-app.route('/x/payment', redsys)
+app.route('/x/payment', payment)
 
 export default app
