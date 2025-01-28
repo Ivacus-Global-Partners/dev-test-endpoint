@@ -1,0 +1,47 @@
+import { z } from 'zod'
+
+/*
+{"acepta_privacidad":"@acepta_privacidad","alta_suma":"@alta_suma","apellidos_propietario":"@apellidos_propietario","calle_numero":"@calle_numero","channel":"@channel","cod_postal":"@cod_postal","datablock":"@datablock","dni_propietario":"@dni_propietario","edad_mascota":"@edad_mascota","email_propietario":"@email_propietario","esterilizado_mascota":"@esterilizado_mascota","fci_perro":"@fci_perro","fecha_nacimiento_titular":"@fecha_nacimiento_titular","foto_mascota":"@foto_mascota","funcion_mascota":"@funcion_mascota","grupo_edad":"@grupo_edad","id_fidelidad":"@id_fidelidad","input_digitos":"@input_digitos","mascota_ppp":"@mascota_ppp","nivel_suma":"@nivel_suma","nombre_mascota":"@nombre_mascota","nombre_propietario":"@nombre_propietario","ok_continuar":"@ok_continuar","pais":"@pais","peso_perro":"@peso_perro","poblacion":"@poblacion","procedencia":"@procedencia","product":"@product","promoCode":"@promoCode","provincia":"@provincia","raza":"@raza__label","raza_id":"@raza__value","salud_mascota":"@salud_mascota","sexo_mascota":"@sexo_mascota","tamano_perro":"@tamano_perro","telefono_propietario":"@telefono_propietario","tipo_mascota":"@tipo_mascota","tipo_raza":"@tipo_raza","titular_suma":"@titular_suma","userId":"@user_id","vacunacion":"@vacunacion"}
+*/
+
+export const payloadSchema = z.object({
+  purchaseGUID: z.string(),
+  purchaseDate: z.string(),
+  productGUID: z.string(),
+  promoCode: z.string().optional(),
+  partnerGUID: z.string().optional(),
+  providerName: z.string(),
+  ux: z.string().optional(),
+  fx: z.string().optional(),
+  name: z.string(),
+  lastName: z.string(),
+  secondLastName: z.string().optional(),
+  email: z.string(),
+  phone: z.string(),
+  acceptPrivacyPolicy: z.boolean(),
+  dni: z.string(),
+  birthDate: z.string(),
+  roadType: z.string().optional(),
+  address: z.string(),
+  addressNumber: z.string(),
+  addressInfo: z.string().optional(),
+  postalCode: z.string(),
+  city: z.string(),
+  province: z.string(),
+  country: z.string(),
+  companyName: z.string().optional(),
+  companyDocumentId: z.string().optional(),
+  petType: z.string(),
+  petName: z.string(),
+  petBreed: z.string().optional(),
+  motherBreed: z.string().optional(),
+  fatherBreed: z.string().optional(),
+  motherBreedGUID: z.string().optional(),
+  fatherBreedGUID: z.string().optional(),
+  mixedBreed: z.boolean().optional(),
+  dateOfBirth: z.string().optional(),
+  role: z.string().optional(),
+  gender: z.string().optional(),
+  microchip: z.string().optional(),
+  confirmRealData: z.boolean(),
+})

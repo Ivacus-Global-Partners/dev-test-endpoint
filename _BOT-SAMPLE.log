@@ -1,0 +1,860 @@
+<-- POST /x/bot/notifications
+{
+  name: "eso",
+  lastname: "Nadie",
+  dni: "12345678Z",
+  birthdate: "2000-01-01",
+  address: "ALCALA",
+  roadType: "CL",
+  addressNumber: "1",
+  addressData: "",
+  city: "Madrid",
+  province: "Madrid",
+  postalCode: "28001",
+  country: "Spain",
+  phone: "910000000",
+  email: "juan.nadie@mail.com",
+  petName: "Zak",
+  petType: "perro",
+  petBreed: "string",
+  gender: "MALE",
+  microchip: "900295959565656",
+  operationId: "6756f6e4997e0",
+}
+--> POST /x/bot/notifications 200 2ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "POSTBACK_INITCHAT={\"device\":{},\"os\":{\"name\":\"Windows\",\"version\":\"10\"},\"engine\":{\"name\":\"Blink\",\"version\":\"132.0.0.0\"},\"browser\":{\"name\":\"Edge\",\"version\":\"132.0.0.0\",\"major\":\"132\"}}",
+  step: "start",
+  box_id: "welcome",
+  type_input: "POSTBACK_INITCHAT",
+  success: true,
+  next_step: "welcome",
+  next_step_box_id: "welcome",
+  created: "2025-01-24 17:15:59.019094Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "Bienvenido al proceso de compra de **Petpass Track**,  la mejor solución para identificar y encontrar a tus mascotas. 🐶😺 \n\nCon Petpass, Identifica a tu mascota, cumple la ley y encuéntrala si se pierde gracias a nuestro localizador.",
+  input: "",
+  step: "welcome",
+  box_id: "welcome",
+  type_input: "text",
+  success: true,
+  next_step: "83_new_step_8f6e2466-392c-40c4-9c32-affcde973671",
+  next_step_box_id: "retardo_1",
+  created: "2025-01-24 17:16:00.537931Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_1",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-24 17:16:00.739350Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "Nuestro objetivo es dotarte de una plataforma con servicios diseñados para proteger a tu animal de compañía y ayudarte a cumplir con las nuevas obligaciones de la ley de bienestar animal.\n\n🐶 **Mobility ID** - Identificación y vacunación.\n📍 **Smart Pet Tag** - Localizador emergencia NFC/QR\n🆘 **Plataforma SOS** - Comunicar pérdida animal max 48h\n🩺 **Chat & Videollamada Veterinaria**  -Consultas ilimitadas sobre todas las dudas y problemas de tu mascota.",
+  input: "",
+  step: "135_new_step_e4b85f7f-f804-44e2-b233-4611f9033b6a",
+  box_id: "texto_objetivo",
+  type_input: "text",
+  success: true,
+  next_step: "84_new_step_a69ec2d5-3cae-4503-84a1-fb53447b7fb8",
+  next_step_box_id: "retardo_2",
+  created: "2025-01-24 17:16:05.417797Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_2",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-24 17:16:05.608072Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "¿Qué viene incluido en tu **Petpass Track**",
+  input: "",
+  step: "81_new_step_15013225-652a-4f60-a96b-2654c1250f9a",
+  box_id: "texto_incluido_petpass",
+  type_input: "text",
+  success: true,
+  next_step: "85_new_step_f1ba2682-4a0b-4f25-8e95-14af239c0824",
+  next_step_box_id: "retardo_3",
+  created: "2025-01-24 17:16:12.041714Z",
+}
+--> POST /x/bot/notifications 200 1ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_3",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-24 17:16:12.256755Z",
+}
+--> POST /x/bot/notifications 200 1ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "https://i.ibb.co/StG1hRw/chapa-chat.png",
+  input: "",
+  step: "85_new_step_ec995a8f-f1bf-43f1-9a71-77f8d49b8245",
+  box_id: "imagen_pettag",
+  type_input: "show_img",
+  success: true,
+  next_step: "86_new_step_9b0c3737-2ad6-41b1-a693-66f9c0f83067",
+  next_step_box_id: "retardo_4",
+  created: "2025-01-24 17:16:15.887715Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_4",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-24 17:16:16.072617Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "https://i.ibb.co/xHVqKkt/chat-basico.png",
+  input: "",
+  step: "86_new_step_c3279c1f-8077-4ad0-aa56-b01af35d4567",
+  box_id: "imagen_chat_veterinario",
+  type_input: "show_img",
+  success: true,
+  next_step: "87_new_step_57a68912-15a1-4e24-b586-28b1997d2c3b",
+  next_step_box_id: "retardo_5",
+  created: "2025-01-24 17:16:22.034990Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_5",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-24 17:16:22.229180Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "https://i.ibb.co/ynZykK1/sos-petpass.png",
+  input: "",
+  step: "87_new_step_6b233180-a902-452f-8809-a7d286151125",
+  box_id: "imagen_sos_petpass",
+  type_input: "show_img",
+  success: true,
+  next_step: "88_new_step_7359fe41-91fd-4506-8dad-bc57087d1456",
+  next_step_box_id: "retardo_6",
+  created: "2025-01-24 17:16:27.934139Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_6",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-24 17:16:28.152618Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "**WOW, lo tiene todo**  🚀 🥰🕺",
+  input: "",
+  step: "140_new_step_91543599-06a2-4d39-b6e4-f4899fed0793",
+  box_id: "texto_lanzamiento",
+  type_input: "text",
+  success: true,
+  next_step: "89_new_step_f61a57f3-b953-4517-97dd-0712d728b0e9",
+  next_step_box_id: "retardo_7",
+  created: "2025-01-24 17:16:32.359695Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_7",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-24 17:16:32.590644Z",
+}
+--> POST /x/bot/notifications 200 1ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_cee818e8f07dd88c89531dceebb52_test",
+  conversationId: "13ba8058ec70424a44979f5b712394cfdba75e18",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "https://bot.petpass.pro/petpass-feria/img/perros.webp",
+  input: "",
+  step: "49_new_step_4e0eb902-81ce-4efd-be52-e686c0ba77ab",
+  box_id: "gif_perros",
+  type_input: "show_img",
+  success: true,
+  next_step: "136_new_step_2c063781-36b7-4844-9d52-7d135d3d972f",
+  next_step_box_id: "qr_contratacion",
+  created: "2025-01-24 17:16:36.336786Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "POSTBACK_INITCHAT={\"device\":{},\"os\":{\"name\":\"Windows\",\"version\":\"10\"},\"engine\":{\"name\":\"Blink\",\"version\":\"132.0.0.0\"},\"browser\":{\"name\":\"Edge\",\"version\":\"132.0.0.0\",\"major\":\"132\"}}",
+  step: "start",
+  box_id: "welcome",
+  type_input: "POSTBACK_INITCHAT",
+  success: true,
+  next_step: "welcome",
+  next_step_box_id: "welcome",
+  created: "2025-01-24 17:16:36.698310Z",
+}
+--> POST /x/bot/notifications 200 2ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "Bienvenido al proceso de compra de **Petpass Track**,  la mejor solución para identificar y encontrar a tus mascotas. 🐶😺 \n\nCon Petpass, Identifica a tu mascota, cumple la ley y encuéntrala si se pierde gracias a nuestro localizador.",
+  input: "",
+  step: "welcome",
+  box_id: "welcome",
+  type_input: "text",
+  success: true,
+  next_step: "83_new_step_8f6e2466-392c-40c4-9c32-affcde973671",
+  next_step_box_id: "retardo_1",
+  created: "2025-01-24 17:16:38.048418Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_1",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-24 17:16:38.230603Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "Nuestro objetivo es dotarte de una plataforma con servicios diseñados para proteger a tu animal de compañía y ayudarte a cumplir con las nuevas obligaciones de la ley de bienestar animal.\n\n🐶 **Mobility ID** - Identificación y vacunación.\n📍 **Smart Pet Tag** - Localizador emergencia NFC/QR\n🆘 **Plataforma SOS** - Comunicar pérdida animal max 48h\n🩺 **Chat & Videollamada Veterinaria**  -Consultas ilimitadas sobre todas las dudas y problemas de tu mascota.",
+  input: "",
+  step: "135_new_step_e4b85f7f-f804-44e2-b233-4611f9033b6a",
+  box_id: "texto_objetivo",
+  type_input: "text",
+  success: true,
+  next_step: "84_new_step_a69ec2d5-3cae-4503-84a1-fb53447b7fb8",
+  next_step_box_id: "retardo_2",
+  created: "2025-01-24 17:16:42.928139Z",
+}
+--> POST /x/bot/notifications 200 1ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_2",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-24 17:16:43.134417Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "¿Qué viene incluido en tu **Petpass Track**",
+  input: "",
+  step: "81_new_step_15013225-652a-4f60-a96b-2654c1250f9a",
+  box_id: "texto_incluido_petpass",
+  type_input: "text",
+  success: true,
+  next_step: "85_new_step_f1ba2682-4a0b-4f25-8e95-14af239c0824",
+  next_step_box_id: "retardo_3",
+  created: "2025-01-24 17:16:50.661571Z",
+}
+--> POST /x/bot/notifications 200 1ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_3",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-24 17:16:50.875775Z",
+}
+--> POST /x/bot/notifications 200 1ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "https://i.ibb.co/StG1hRw/chapa-chat.png",
+  input: "",
+  step: "85_new_step_ec995a8f-f1bf-43f1-9a71-77f8d49b8245",
+  box_id: "imagen_pettag",
+  type_input: "show_img",
+  success: true,
+  next_step: "86_new_step_9b0c3737-2ad6-41b1-a693-66f9c0f83067",
+  next_step_box_id: "retardo_4",
+  created: "2025-01-24 17:16:54.545475Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_4",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-24 17:16:54.760621Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "https://i.ibb.co/xHVqKkt/chat-basico.png",
+  input: "",
+  step: "86_new_step_c3279c1f-8077-4ad0-aa56-b01af35d4567",
+  box_id: "imagen_chat_veterinario",
+  type_input: "show_img",
+  success: true,
+  next_step: "87_new_step_57a68912-15a1-4e24-b586-28b1997d2c3b",
+  next_step_box_id: "retardo_5",
+  created: "2025-01-24 17:16:59.662522Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_5",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-24 17:16:59.864334Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "https://i.ibb.co/ynZykK1/sos-petpass.png",
+  input: "",
+  step: "87_new_step_6b233180-a902-452f-8809-a7d286151125",
+  box_id: "imagen_sos_petpass",
+  type_input: "show_img",
+  success: true,
+  next_step: "88_new_step_7359fe41-91fd-4506-8dad-bc57087d1456",
+  next_step_box_id: "retardo_6",
+  created: "2025-01-24 17:17:05.026856Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_6",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-24 17:17:05.237258Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "**WOW, lo tiene todo**  🚀 🥰🕺",
+  input: "",
+  step: "140_new_step_91543599-06a2-4d39-b6e4-f4899fed0793",
+  box_id: "texto_lanzamiento",
+  type_input: "text",
+  success: true,
+  next_step: "89_new_step_f61a57f3-b953-4517-97dd-0712d728b0e9",
+  next_step_box_id: "retardo_7",
+  created: "2025-01-24 17:17:09.346030Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_7",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-24 17:17:09.540603Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "https://bot.petpass.pro/petpass-feria/img/perros.webp",
+  input: "",
+  step: "49_new_step_4e0eb902-81ce-4efd-be52-e686c0ba77ab",
+  box_id: "gif_perros",
+  type_input: "show_img",
+  success: true,
+  next_step: "136_new_step_2c063781-36b7-4844-9d52-7d135d3d972f",
+  next_step_box_id: "qr_contratacion",
+  created: "2025-01-24 17:17:13.275224Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ae15e12a2de6ce290b1917fb2e4ffc05f920e526",
+  userId: "a7b9207cef70e1f728306591ddb009b278ede212",
+  bot_message: "",
+  input: "POSTBACK_INITCHAT={\"device\":{},\"os\":{\"name\":\"Windows\",\"version\":\"10\"},\"engine\":{\"name\":\"Blink\",\"version\":\"132.0.0.0\"},\"browser\":{\"name\":\"Edge\",\"version\":\"132.0.0.0\",\"major\":\"132\"}}",
+  step: "start",
+  box_id: "qr_contratacion",
+  type_input: "POSTBACK_INITCHAT",
+  success: true,
+  next_step: "136_new_step_2c063781-36b7-4844-9d52-7d135d3d972f",
+  next_step_box_id: "qr_contratacion",
+  created: "2025-01-24 17:23:32.913660Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/register
+{
+  channel: "test",
+  product: "Track",
+  promoCode: null,
+  name: "Ignacio",
+  lastname: "Jarandilla",
+  dni: "46888341N",
+  birthdate: "1978-07-10",
+  address: "San Lorenzo 24",
+  roadType: "",
+  addressNumber: "",
+  addressData: "",
+  city: "Coles",
+  province: "Orense",
+  postalCode: "32152",
+  country: "Spain",
+  phone: "659605019",
+  email: "ignaciojarandilla640@gmail.com",
+  file: "",
+  avatar: "",
+  petName: "",
+  petType: "perro",
+  petBreed: "",
+  gender: "",
+  microchip: "",
+  operationId: "6793d7453004a",
+}
+--> POST /x/bot/register 200 2ms
+<-- GET /
+--> GET / 200 0ms
+<-- GET /robots.txt
+--> GET /robots.txt 404 1ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "",
+  input: "POSTBACK_INITCHAT={\"device\":{},\"os\":{\"name\":\"Mac OS\",\"version\":\"10.15\"},\"engine\":{\"name\":\"Gecko\",\"version\":\"134.0\"},\"browser\":{\"name\":\"Firefox\",\"version\":\"134.0\",\"major\":\"134\"}}",
+  step: "start",
+  box_id: "welcome",
+  type_input: "POSTBACK_INITCHAT",
+  success: true,
+  next_step: "welcome",
+  next_step_box_id: "welcome",
+  created: "2025-01-27 09:02:38.804029Z",
+}
+--> POST /x/bot/notifications 200 2ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "Bienvenido al proceso de compra de **Petpass Track**,  la mejor solución para identificar y encontrar a tus mascotas. 🐶😺 \n\nCon Petpass, Identifica a tu mascota, cumple la ley y encuéntrala si se pierde gracias a nuestro localizador.",
+  input: "",
+  step: "welcome",
+  box_id: "welcome",
+  type_input: "text",
+  success: true,
+  next_step: "83_new_step_8f6e2466-392c-40c4-9c32-affcde973671",
+  next_step_box_id: "retardo_1",
+  created: "2025-01-27 09:02:40.475305Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_1",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-27 09:02:40.699107Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "Nuestro objetivo es dotarte de una plataforma con servicios diseñados para proteger a tu animal de compañía y ayudarte a cumplir con las nuevas obligaciones de la ley de bienestar animal.\n\n🐶 **Mobility ID** - Identificación y vacunación.\n📍 **Smart Pet Tag** - Localizador emergencia NFC/QR\n🆘 **Plataforma SOS** - Comunicar pérdida animal max 48h\n🩺 **Chat & Videollamada Veterinaria**  -Consultas ilimitadas sobre todas las dudas y problemas de tu mascota.",
+  input: "",
+  step: "135_new_step_e4b85f7f-f804-44e2-b233-4611f9033b6a",
+  box_id: "texto_objetivo",
+  type_input: "text",
+  success: true,
+  next_step: "84_new_step_a69ec2d5-3cae-4503-84a1-fb53447b7fb8",
+  next_step_box_id: "retardo_2",
+  created: "2025-01-27 09:02:45.646215Z",
+}
+--> POST /x/bot/notifications 200 1ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_2",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-27 09:02:45.839914Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "¿Qué viene incluido en tu **Petpass Track**",
+  input: "",
+  step: "81_new_step_15013225-652a-4f60-a96b-2654c1250f9a",
+  box_id: "texto_incluido_petpass",
+  type_input: "text",
+  success: true,
+  next_step: "85_new_step_f1ba2682-4a0b-4f25-8e95-14af239c0824",
+  next_step_box_id: "retardo_3",
+  created: "2025-01-27 09:02:52.042130Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_3",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-27 09:02:52.261984Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "https://i.ibb.co/StG1hRw/chapa-chat.png",
+  input: "",
+  step: "85_new_step_ec995a8f-f1bf-43f1-9a71-77f8d49b8245",
+  box_id: "imagen_pettag",
+  type_input: "show_img",
+  success: true,
+  next_step: "86_new_step_9b0c3737-2ad6-41b1-a693-66f9c0f83067",
+  next_step_box_id: "retardo_4",
+  created: "2025-01-27 09:02:55.566558Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_4",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-27 09:02:55.774639Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "https://i.ibb.co/xHVqKkt/chat-basico.png",
+  input: "",
+  step: "86_new_step_c3279c1f-8077-4ad0-aa56-b01af35d4567",
+  box_id: "imagen_chat_veterinario",
+  type_input: "show_img",
+  success: true,
+  next_step: "87_new_step_57a68912-15a1-4e24-b586-28b1997d2c3b",
+  next_step_box_id: "retardo_5",
+  created: "2025-01-27 09:03:01.466687Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_5",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-27 09:03:01.656597Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "https://i.ibb.co/ynZykK1/sos-petpass.png",
+  input: "",
+  step: "87_new_step_6b233180-a902-452f-8809-a7d286151125",
+  box_id: "imagen_sos_petpass",
+  type_input: "show_img",
+  success: true,
+  next_step: "88_new_step_7359fe41-91fd-4506-8dad-bc57087d1456",
+  next_step_box_id: "retardo_6",
+  created: "2025-01-27 09:03:06.930871Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_6",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-27 09:03:07.139716Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "**WOW, lo tiene todo**  🚀 🥰🕺",
+  input: "",
+  step: "140_new_step_91543599-06a2-4d39-b6e4-f4899fed0793",
+  box_id: "texto_lanzamiento",
+  type_input: "text",
+  success: true,
+  next_step: "89_new_step_f61a57f3-b953-4517-97dd-0712d728b0e9",
+  next_step_box_id: "retardo_7",
+  created: "2025-01-27 09:03:11.531707Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "",
+  input: "",
+  step: "",
+  box_id: "retardo_7",
+  type_input: "Trigger On",
+  success: true,
+  next_step: null,
+  next_step_box_id: null,
+  created: "2025-01-27 09:03:11.761627Z",
+}
+--> POST /x/bot/notifications 200 1ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "https://bot.petpass.pro/petpass-feria/img/perros.webp",
+  input: "",
+  step: "49_new_step_4e0eb902-81ce-4efd-be52-e686c0ba77ab",
+  box_id: "gif_perros",
+  type_input: "show_img",
+  success: true,
+  next_step: "57_new_step_b48c1d01-3958-4845-ac76-06fbb6b45071",
+  next_step_box_id: "New step 57",
+  created: "2025-01-27 09:03:14.482234Z",
+}
+--> POST /x/bot/notifications 200 0ms
+<-- POST /x/bot/notifications
+{
+  idsha: "autob_7d4784063d370f0ea863d00521a9f_test",
+  conversationId: "ff3f24c73c3564bac01dcb47f545bdbb76fe30ec",
+  userId: "219cdf2e357f3fe3005537c6c420f922f865e408",
+  bot_message: "https://www.youtube.com/watch?v=xMrRX1pw7To",
+  input: "",
+  step: "57_new_step_b48c1d01-3958-4845-ac76-06fbb6b45071",
+  box_id: "New step 57",
+  type_input: "show_img",
+  success: true,
+  next_step: "136_new_step_2c063781-36b7-4844-9d52-7d135d3d972f",
+  next_step_box_id: "qr_contratacion",
+  created: "2025-01-27 09:03:15.810007Z",
+}
+--> POST /x/bot/notifications 200 0ms
+
+
+fin....

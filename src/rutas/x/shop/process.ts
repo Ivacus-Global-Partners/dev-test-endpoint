@@ -129,6 +129,36 @@ export const createPurchase = async (payload: Payload) => {
 
   console.log('Creating purchase', purchaseGUID)
 
+  /*
+  {
+  channel: "test",
+  product: "Track",
+  promoCode: null,
+  name: "JOE",
+  lastname: "GUTI",
+  dni: "12345678Z",
+  birthdate: "2000-01-01",
+  address: "c/ CALLE 1",
+  roadType: "",
+  addressNumber: "",
+  addressData: "",
+  city: "MADRID",
+  province: "Madrid",
+  postalCode: "28001",
+  country: "Spain",
+  phone: "699000000",
+  email: "dev@petpass.pro",
+  file: "",
+  avatar: "",
+  petName: "",
+  petType: "perro",
+  petBreed: "",
+  gender: "",
+  microchip: "",
+  operationId: "67728121b0194",
+}
+  */
+
   const result = await graphqlRequest<CreatePurchaseFromPartnerMutation, CreatePurchaseFromPartnerMutationVariables>({
     query: CreatePurchaseFromPartnerDocument,
     variables: {
